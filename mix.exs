@@ -5,7 +5,9 @@ defmodule Mailgun.Mixfile do
     [app: :mailgun,
      version: "0.1.3",
      elixir: "~> 1.1",
-     deps: deps,
+     deps: [{:exvcr, "~> 0.4.0", only: [:test]},
+     {:poison, "~> 1.4 or ~> 5.0"}
+    ],
      package: [
        contributors: ["Chris McCord"],
        licenses: ["MIT"],
