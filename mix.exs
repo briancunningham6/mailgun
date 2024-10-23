@@ -3,10 +3,10 @@ defmodule Mailgun.Mixfile do
 
   def project do
     [app: :mailgun,
-     version: "0.1.3",
+     version: "0.1.4",
      elixir: "~> 1.1",
      deps: [{:exvcr, "~> 0.4.0", only: [:test]},
-     {:poison, "~> 1.4 or ~> 5.0"}
+     {:poison, "~> 4.0.0"}
     ],
      package: [
        contributors: ["Chris McCord"],
